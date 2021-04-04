@@ -1,34 +1,437 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>aMustova</title>
-  <meta content="My portfolio page" name="description">
-  <meta content="portfolio" name="keywords">
 
-  <!--// Favicons goes here //-->
-  <!--// CSS Framework goes here //-->
-  <!--// Main CSS goes here //-->
- 
-  <!--// =========================================================================
-  * Template Name  : aMustova V.001-Alpha                                        *
-  * Template URL   : https://github.com/amustova/amustova.github.io/             *
-  * Author         : Muhammad Mustova                                            *
-  * License        : Yet to be decided                                           *
-  *                                                                              *
-  * I Love Comment Block, Cause Who's Not                                        *
-  *========================================================================= //-->
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>aMustova</title>
+    <meta content="My portfolio page" name="description" />
+    <meta content="portfolio" name="keywords" />
 
-</head>
-<body id="main" style="background-color: #6C00AF; color: #F8FAFB">
-  <div class="container" style="min-height:100vh; display: flex; flex-direction: column; justify-content: center; align-items: center">
-        <h1><span style="color: black">Hello</span> World!</span></h1>
-        <p>Nothing's here [yet]</p>
-        <span>&#x1f43e;</span>
-  </div>
+    <!--// Favicons goes here //-->
+    <link href="exxotic-white.png" rel="icon" />
+    <!--// CSS framework goes here //-->
+    <link rel="stylesheet" href="bootstrap.css" />
+    <!--// CSS theme goes here //-->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="prism.css" />
 
-  <!--// JavaScript goes here //-->
-  <script src="js/bootstrap.bundle.min.js"></script>
-</body>
+    <!--// =========================================================================
+    * Template Name  : aMustova V.001-Alpha                                        *
+    * Template URL   : https://github.com/amustova/amustova.github.io/             *
+    * Author         : Muhammad Mustova                                            *
+    * License        : Yet to be decided                                           *
+    *                                                                              *
+    * I Love Comment Block, Cause... Who's Not                                     *
+    ========================================================================== //-->
+  </head>
+
+  <body>
+
+<!--// ==================
+*                       *
+*  NAVIGATION SECTION   *
+*                       *
+=================== //-->
+    <!--// navigation //-->
+    <nav id="navigation" class="navbar navbar-expand-lg navbar-custom bg-purple fixed-top">
+      <div class="container">
+        <a class="navbar-brand" data-bs-target="#carouselPage" data-bs-slide-to="0">
+          <img src="exxotic-white.png" alt="" width="32px" height="32px" />
+        </a>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+          <span class="toggler-icon"></span>
+          <span class="toggler-icon"></span>
+          <span class="toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto carousel-controls">
+            <a class="nav-link active" data-bs-target="#carouselPage" data-bs-slide-to="0">Intro</a>
+            <a class="nav-link" data-bs-target="#carouselPage" data-bs-slide-to="1">About</a>
+            <a class="nav-link" data-bs-target="#carouselPage" data-bs-slide-to="2">Experience</a>
+            <a class="nav-link" data-bs-target="#carouselPage" data-bs-slide-to="3">Education</a>
+            <a class="nav-link" data-bs-target="#carouselPage" data-bs-slide-to="4">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--// end navigation //-->
+
+    <div id="carouselPage" class="carousel slide" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="false">
+      <div class="carousel-inner">
+
+<!--// ==================
+*                       *
+*     HERO SECTION      *
+*                       *
+=================== //-->
+        <section id="intro" class="carousel-item active">
+          <div class="bg-purple min-vh-100 d-flex flex-column justify-content-center align-items-center text-center">
+            <h1 class="text-light">
+              <span class="text-dark">Hello! I'm</span> Muhammad Mus<abbr title="You might call me">tova</abbr>
+            </h1>
+            <p class="text-light mb-4">Computer Technician, Web Designer & Part-time Gamer.</p>
+            <p class="lead mb-4"></p>
+            <div class="#d-grid #gap-2 d-sm-flex justify-content-center">
+              <a class="btn btn-dark px-3 me-3" data-bs-target="#carouselPage" data-bs-slide-to="1">About Me</a>
+              <a class="btn btn-light px-3" data-bs-target="#carouselPage" data-bs-slide-to="4">Hire Me</a>
+            </div>
+          </div>
+        </section>
+        <!--// end hero //-->
+
+<!--// ==================
+*                       *
+*    ABOUT SECTION      *
+*                       *
+=================== //-->
+        <section id="about" class="carousel-item">
+          <div class="bg-light min-vh-100 d-flex align-items-start">
+            <div class="container pt-5">
+              <div class="row row-cols-1 row-cols-md-2 g-3 g-md-5 mb-5">
+
+                <div class="col">
+                  <div class="card-body p-4 h-100 bg-white">
+                    <p class="heading">what i'm doing</p>
+                    <h3>#Sleeping</h3>
+                    <p>I spent most of my times to sleep...</p>
+                    <pre><code class="language-javascript">if (st = sleepy ||
+    st = nothingToDo ||
+    st = needTo){
+    sleep();
+  } else {
+    // do something.
+  }         </code></pre>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card-body p-4 h-100 bg-white">
+                    <p class="heading">work ethic</p>
+                    <h3>#Perfectionist</h3>
+                    <p>People's said that I am <abbr title="Character created by Stephen Hillenburg">SpongeBob</abbr> incarnation. Well, I pay a lot of attention to details.</p>
+                    <p>&nbsp;. . .</p>
+                    <p>&nbsp;. . .</p>
+                    <p>But don't worry, I'm not square, <strike>yet</strike>.&#x1F633;</p>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card-body p-4 h-100 bg-white">
+                    <p class="heading">expertise</p>
+                    <h3>#Troubleshooting</h3>
+                    <p><abbr title="I don't know">Idk</abbr> where it's start but lately, I found out that my best field is at problem solving.</p>
+                    <ul>
+                      <li class="bulb">Computer related.</li>
+                      <li class="bulb">Mechanical & Electricity.</li>
+                      <li class="bulb">Simple Math problems.</li>
+                      <li class="bulb">You name it.</li>
+                    </ul>
+                    <p>I won't stop till I found the solutions.</p>
+                    <blockquote>"I will look for you, I will find you and I will <strike>ki</strike><mark>fix</mark> you."</blockquote>
+                    <p>Oh, I also always double check my works from errors.</p>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card-body p-4 h-100 bg-white">
+                    <p class="heading">thing i hate</p>
+                    <h3>#Cheating</h3>
+                    <p>I hate cheater and I hate being cheated, therefore I won't cheat at everything.</p>
+                    <p>So what did I do to cheater who cheat on me?</p>
+                    <pre><code class="language-html">&lt;!--// ================
+*                     *
+*    This is          *
+*    special place    *
+*    for cheater      *
+*                     *
+================= //--&gt;</code></pre>
+                    <p>Hope you got the idea. &#x1F43E;</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--// end about //-->
+
+<!--// ==================
+*                       *
+*   EXPERIENCE SECTION  *
+*                       *
+=================== //-->
+        <section id="experience" class="carousel-item">
+          <div class="bg-light min-vh-100 d-flex align-items-start">
+            <div class="container pt-5">
+              <div class="row row-cols-1 g-5 g-md-5 mb-5">
+                
+                <div class="col">
+                  <h3>Employed Records</h3>
+                  <span>* hover or click bar area to see details.</span><br>
+                  <span>* you might scrolling left-right too.</span>
+                  <div class="wrapper mt-5">
+                    <div id="chart">
+                      <div class="chart-row ">
+                        <div class="col item">-</div>
+                        <div class="col-11 item bg-purple" data-bs-toggle="tooltip" title="Personal, free-time as web designer">&nbsp;</div>
+                      </div>
+                      <div class="chart-row ">
+                        <div class="col item">-</div>
+                        <div class="col-5 item bg-danger" data-bs-toggle="tooltip" title="Dimas NET, full-time as computer technician">&nbsp;</div>
+                        <div class="col item">-</div>
+                        <div class="col item">-</div>
+                        <div class="col item">-</div>
+                        <div class="col item">-</div>
+                        <div class="col item">-</div>
+                        <div class="col item">-</div>
+                      </div>
+                      <div class="chart-row ">
+                        <div class="col item">-</div>
+                        <div class="col item">-</div>
+                        <div class="col item">-</div>
+                        <div class="col item">-</div>
+                        <div class="col item">-</div>
+                        <div class="col-7 item bg-orange" data-bs-toggle="tooltip" title="Exxotic KTV, full-time as computer technician">&nbsp;</div>
+                      </div>
+                      <div class="chart-row ">
+                        <div class="col item">-</div>
+                        <div class="col item">-</div>
+                        <div class="col item">-</div>
+                        <div class="col item">-</div>
+                        <div class="col item">-</div>
+                        <div class="col item">-</div>
+                        <div class="col item">-</div>
+                        <div class="col item">-</div>
+                        <div class="col item">-</div>
+                        <div class="col-1 item bg-success" data-bs-toggle="tooltip" title="De Luna KTV, part-time as computer technician">&nbsp;</div>
+                        <div class="col item">-</div>
+                        <div class="col-1 item bg-success" data-bs-toggle="tooltip" title="De Luna KTV, part-time as computer technician">&nbsp;</div>
+                      </div>
+                      <div class="chart-row ">
+                        <div class="col item">-</div>
+                        <div class="col item">-</div>
+                        <div class="col item">-</div>
+                        <div class="col item">-</div>
+                        <div class="col item">-</div>
+                        <div class="col item">-</div>
+                        <div class="col item">-</div>
+                        <div class="col item">-</div>
+                        <div class="col item">-</div>
+                        <div class="col item">-</div>
+                        <div class="col-2 item bg-info" data-bs-toggle="tooltip" title="Jawara Adv, part-time as computer technician">&nbsp;</div>
+                      </div>
+                      <div class="chart-row ">
+                        <div class="col item">-</div>
+                        <div class="col item">-</div>
+                        <div class="col item">-</div>
+                        <div class="col item">-</div>
+                        <div class="col item">-</div>
+                        <div class="col item">-</div>
+                        <div class="col item">-</div>
+                        <div class="col item">-</div>
+                        <div class="col item">-</div>
+                        <div class="col item">-</div>
+                        <div class="col item">-</div>
+                        <div class="col item bg-secondary" data-bs-toggle="tooltip" title="Nusa Motor, part-time as computer technician">&nbsp;</div>
+                      </div>
+                      <div class="chart-row ">
+                        <div class="col item">-</div>
+                        <div class="col item">2011</div>
+                        <div class="col item">2012</div>
+                        <div class="col item">2013</div>
+                        <div class="col item">2014</div>
+                        <div class="col item">2015</div>
+                        <div class="col item">2016</div>
+                        <div class="col item">2017</div>
+                        <div class="col item">2018</div>
+                        <div class="col item">2019</div>
+                        <div class="col item">2020</div>
+                        <div class="col item">2021</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <h3>Legend</h3>
+                  <ul>
+                    <li class="d-flex align-items-center">
+                      <i class="bullet bg-purple"></i>Personal <mark>ongoing</mark>
+                    </li>spending free-time as freelance web designer.
+                    <li class="d-flex align-items-center">
+                      <i class="bullet bg-danger"></i>Dimas NET <mark>done</mark>
+                    </li>internet corner & game center.
+                    <li class="d-flex align-items-center">
+                      <i class="bullet bg-orange"></i>Exxotic KTV <mark>ongoing</mark>
+                    </li>karaoke bar & cafe.
+                    <li class="d-flex align-items-center">
+                      <i class="bullet bg-success"></i>De Luna KTV <mark>ongoing</mark>
+                    </li>family oriented karaoke cafe.
+                    <li class="d-flex align-items-center">
+                      <i class="bullet bg-info"></i>Jawara Adv <mark>ongoing</mark>
+                    </li>advertising & printing company.
+                    <li class="d-flex align-items-center">
+                      <i class="bullet bg-secondary"></i>Nusa Motor <mark>ongoing</mark>
+                    </li>motor vehicle dealer.
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--// end experience //-->
+
+<!--// ==================
+*                       *
+*    EDUCATION SECTION  *
+*                       *
+=================== //-->
+        <section id="education" class="carousel-item">
+          <div class="bg-white min-vh-100 d-flex align-items-start">
+            <div class="container pt-5">
+              <div class="row g-3 g-md-5 mb-5">
+                <div class="col">
+
+                  <!--// start timeline //-->
+                  <ul class="timeline">
+
+                    <li>
+                      <div class="timeline-image">
+                        <small>E.S</small>
+                        <!--// I could place image here to //-->
+                      </div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h5 class="text-muted">1996 - 2001</h5>
+                        </div>
+                        <div class="timeline-body">
+                          <h4 class="">SDN 01 Bangunrejo</h4>
+                          <p>Olympic participant; Top #10 graduate.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="timeline-inverted">
+                      <div class="timeline-image">
+                        <small>M.S</small>
+                      </div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h5 class="text-muted">2001 - 2004</h5>
+                        </div>
+                        <div class="timeline-body">
+                          <h4 class="">SMPN 02 Kauman</h4>
+                          <p>Top #10 first and second year.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="timeline-image">
+                        <small>H.S</small>
+                      </div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h5 class="text-muted">2004 - 2007</h5>
+                        </div>
+                        <div class="timeline-body">
+                          <h4 class="">SMK PGRI 02 Ponorogo</h4>
+                          <p>Majoring in Engineering & Technology; Chest tournament participant; Top #10 graduate.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="timeline-inverted">
+                      <div class="timeline-image">
+                        <small>B.D</small>
+                      </div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h5 class="text-muted">2007 - 2011</h5>
+                        </div>
+                        <div class="timeline-body">
+                          <h4 class="">Unv. Muhammadiyah Ponorogo</h4>
+                          <p>No achievement; fail to bloom; dropped out from <span class="fw-bold">B.Sc. CS</span>.</p>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="timeline-inverted">
+                      <div class="timeline-image">
+                        <small>?</small>
+                      </div>
+                    </li>
+
+                  </ul>
+                  <!--// end timeline //-->
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--// end education //-->
+
+<!--// ==================
+*                       *
+*    CONTACT SECTION    *
+*                       *
+=================== //-->
+        <section id="contact" class="carousel-item">
+          <div class="bg-light min-vh-100 d-flex align-items-start">
+            <div class="container pt-5">
+              <div class="row">
+                <div class="col-auto mb-5">
+                  <p>I've been thinking a lot whether I should post my real address and phone number here or not. And, I'm reaching conclusion to not to.</p>
+                </div>
+              </div>
+              <div class="row row-cols-1 row-cols-md-2 g-3 g-md-5 mb-5">
+                <div class="col">
+                  <h5 class="">Email</h5>
+                  <p><a href="mailto:someone@yoursite.com?subject=Hiring - amustova.github.io">amustova@protonmail.com</a></p>
+                </div>
+                <div class="col text-md-end">
+                  <h5 class="">On The Web</h5>
+                  <div class="d-flex justify-content-md-end align-items-center">
+                    <a class="btn box bg-white twitter" data-bs-toggle="tooltip" title="Ops! No target yet">Tw</a>
+                    <a class="btn box bg-white github" data-bs-toggle="tooltip" title="Ops! No target yet">Git</a>
+                    <a class="btn box bg-white linkedin" data-bs-toggle="tooltip" title="Ops! No target yet">Lin</a>
+                    <a class="btn box bg-white telegram" data-bs-toggle="tooltip" title="Ops! No target yet">Tgr</a>
+                    <a class="btn box bg-white facebook" data-bs-toggle="tooltip" title="Ops! No target yet">Fb</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+        <!--// end contact //-->
+
+
+      </div>
+    </div>
+
+<!--// ==================
+*                       *
+*    FOOTER SECTION     *
+*                       *
+=================== //-->
+    <footer class="bg-black">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center text-md-start">
+            <small class="text-light">&copy; 2021 aMustova.</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--// end footer //-->
+
+    <!--// JavaScript goes here //-->
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="prism.js"></script>
+    <script src="main.js"></script>
+  </body>
+
 </html>
