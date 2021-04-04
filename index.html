@@ -73,7 +73,7 @@
             <p class="text-light mb-4">Computer Technician, Web Designer & Part-time Gamer.</p>
             <p class="lead mb-4"></p>
             <div class="#d-grid #gap-2 d-sm-flex justify-content-center">
-              <a class="btn btn-dark px-3 me-3" data-bs-target="#carouselPage" data-bs-slide-to="1">About Me</a>
+              <a class="btn btn-outline-light px-3 me-3" data-bs-target="#carouselPage" data-bs-slide-to="1">About Me</a>
               <a class="btn btn-light px-3" data-bs-target="#carouselPage" data-bs-slide-to="4">Hire Me</a>
             </div>
           </div>
@@ -167,7 +167,7 @@
               <div class="row row-cols-1 g-5 g-md-5 mb-5">
                 
                 <div class="col">
-                  <h3>Employed Records</h3>
+                  <p class="heading">Employed Records</p>
                   <span>* hover or click bar area to see details.</span><br>
                   <span>* you might scrolling left-right too.</span>
                   <div class="wrapper mt-5">
@@ -254,7 +254,8 @@
                 </div>
 
                 <div class="col">
-                  <h3>Legend</h3>
+                  <p class="heading">Legend</p>
+                  <!--//
                   <ul>
                     <li class="d-flex align-items-center">
                       <i class="bullet bg-purple"></i>Personal <mark>ongoing</mark>
@@ -275,6 +276,52 @@
                       <i class="bullet bg-secondary"></i>Nusa Motor <mark>ongoing</mark>
                     </li>motor vehicle dealer.
                   </ul>
+                  //-->
+                  <div class="row row-cols-1 row-cols-md-2 g-3 g-md-5">
+                  
+                    <div class="col">
+                      <div class=" d-flex align-items-center fw-normal">
+                        <i class="bullet bg-purple"></i>Personal <mark>ongoing</mark>
+                      </div>
+                      <span>spending free-time as freelance web designer.</span>
+                    </div>
+                    
+                    <div class="col">
+                      <div class=" d-flex align-items-center fw-normal">
+                        <i class="bullet bg-danger"></i>Dimas NET <mark>done</mark>
+                      </div>
+                      <span>internet corner & game center.</span>
+                    </div>
+                    
+                    <div class="col">
+                      <div class=" d-flex align-items-center fw-normal">
+                        <i class="bullet bg-orange"></i>Exxotic KTV <mark>ongoing</mark>
+                      </div>
+                      <span>karaoke bar & cafe.</span>
+                    </div>
+                    
+                    <div class="col">
+                      <div class=" d-flex align-items-center fw-normal">
+                        <i class="bullet bg-success"></i>De Luna KTV <mark>ongoing</mark>
+                      </div>
+                      <span>family oriented karaoke cafe.</span>
+                    </div>
+                    
+                    <div class="col">
+                      <div class=" d-flex align-items-center fw-normal">
+                        <i class="bullet bg-info"></i>Jawara Adv <mark>ongoing</mark>
+                      </div>
+                      <span>advertising & printing company.</span>
+                    </div>
+                    
+                    <div class="col">
+                      <div class=" d-flex align-items-center fw-normal">
+                        <i class="bullet bg-secondary"></i>Nusa Motor <mark>ongoing</mark>
+                      </div>
+                      <span>motor vehicle dealer.</span>
+                    </div>
+                    
+                  </div>
                 </div>
               </div>
             </div>
@@ -379,11 +426,24 @@
 *                       *
 =================== //-->
         <section id="contact" class="carousel-item">
-          <div class="bg-light min-vh-100 d-flex align-items-start">
+          <div class="bg-light min-vh-100 d-flex align-items-center">
             <div class="container pt-5">
-              <div class="row">
-                <div class="col-auto mb-5">
-                  <p>I've been thinking a lot whether I should post my real address and phone number here or not. And, I'm reaching conclusion to not to.</p>
+              <div class="row g-3">
+                <div class="col-12 col-md-6">
+                  <form id="fs-frm" accept-charset="utf-8" action="https://formspree.io/f/xzbybdqr" method="post">
+                    <fieldset id="fs-frm-inputs">
+                      <input type="text" name="name" id="full-name" placeholder="Name" required="" class="form-control rounded-pill">
+                </div>
+                <div class="col-12 col-md-6">
+                      <input type="email" name="_replyto" id="email-address" placeholder="Email" required="" class="form-control rounded-pill">
+                </div>
+                <div class="col-12">
+                    <textarea rows="5" name="message" id="message" placeholder="Message" required="" class="form-control"></textarea>
+                    <input type="hidden" name="_subject" id="email-subject" value="amustova.github.io - contact form">
+                    </fieldset>
+                    <input type="submit" value="Send" class="btn btn-white my-3">
+                    <p id="status"></p>
+                  </form>
                 </div>
               </div>
               <div class="row row-cols-1 row-cols-md-2 g-3 g-md-5 mb-5">
