@@ -94,7 +94,7 @@ ul {
   list-style: none; 
   }
 li {
-  margin-top: 1rem;
+  margin-top: 0.25rem;
   }
 li:before {
   content: ""; /*\24C2";*/
