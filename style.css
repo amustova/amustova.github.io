@@ -6,6 +6,13 @@
   --bs-black: #111111;
   --bs-purple: #6C00AF;
   }
+@font-face {
+  font-family: 'poppinsregular';
+  src: url('poppins-regular-webfont.woff2') format('woff2'),
+       url('poppins-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 .form-control::file-selector-button {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
 }
@@ -85,6 +92,7 @@
   transition: transform 0.3s ease-in-out !important;
 }
 body {
+  font-family: 'poppinsregular';
   color: var(--bs-gray-dark);
   background-color: var(--bs-light);
   padding-top: 50px;
