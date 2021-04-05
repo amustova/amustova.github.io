@@ -5,11 +5,12 @@
   --bs-gray-light: #aaaaaa;
   --bs-black: #111111;
   --bs-purple: #6C00AF;
+  --bs-font-sans-serif: "poppinsregular", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 @font-face {
-  font-family: 'poppinsregular';
-  src: url('poppins-regular-webfont.woff2') format('woff2'),
-       url('poppins-regular-webfont.woff') format('woff');
+  font-family: "poppinsregular";
+  src: url("poppins-regular-webfont.woff2") format("woff2"),
+       url("poppins-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -92,7 +93,6 @@
   transition: transform 0.3s ease-in-out !important;
 }
 body {
-  font-family: 'poppinsregular';
   color: var(--bs-gray-dark);
   background-color: var(--bs-light);
   padding-top: 50px;
