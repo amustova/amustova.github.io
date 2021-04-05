@@ -85,7 +85,7 @@
   transition: transform 0.3s ease-in-out !important;
 }
 body {
-  color: var(--bs-gray);
+  color: var(--bs-gray-dark);
   background-color: var(--bs-light);
   padding-top: 50px;
   }
@@ -165,7 +165,7 @@ blockquote {
   background-color: var(--bs-light);
   padding: 1rem;
   font-style: italic;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--bs-gray-light);
   border-left: 0.25rem solid var(--bs-purple);
   border-radius: 0.25rem;
