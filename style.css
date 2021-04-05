@@ -85,9 +85,6 @@
   transition: transform 0.3s ease-in-out !important;
 }
 body {
-  font-size: 1.25rem;
-  font-weight: 300;
-  line-height: 2rem;
   color: var(--bs-gray);
   background-color: var(--bs-light);
   padding-top: 50px;
@@ -137,8 +134,8 @@ h6 {
   }
 p.heading {
   color: var(--bs-gray); /*rgba(108, 0, 175, 1);*/
-  font-size: 1.5rem;
-  font-weight: 800;
+  font-size: 1.25rem;
+  font-weight: 600;
   text-transform: uppercase;
   margin-top: -0.5rem;
   }
@@ -148,7 +145,7 @@ p.heading:after {
   border-bottom: 0.25rem dotted var(--bs-purple); /*rgba(108, 0, 175, 1);*/
   }
 pre {
-  font-size: 1.1rem !important;
+  font-size: 1rem !important;
   background-color: var(--bs-dark) !important;
   border-radius: 0.25rem !important;
   }
@@ -296,17 +293,15 @@ noted,
   
   
   }
-.min-vh-100 {
-  min-height: calc(100vh - 100px) !important;
-  }
 .flex-even {
   flex: 1;
   }
 .toast-body {
-  font-size: 1.25rem;
-  font-weight: 300;
-  line-height: 2rem;
+  font-size: 1rem;
   color: var(--bs-light);
+  }
+.min-vh-100 {
+  min-height: calc(100vh - 7rem) !important;
   }
 /*  NAVBAR
 -----------------------------------------
@@ -319,6 +314,7 @@ nav {
   color: var(--bs-light);
   font-size: 1.25rem;
   font-weight: 400;
+  cursor: pointer;
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus {
@@ -326,7 +322,7 @@ nav {
 }
 .navbar-custom .navbar-nav .nav-link {
   color: var(--bs-light);
-  font-weight: 400;
+  cursor: pointer;
 }
 .navbar-custom .navbar-nav .nav-link:hover,
 .navbar-custom .navbar-nav .nav-link:focus {
@@ -543,7 +539,6 @@ button.navbar-toggler:hover {
     left: 50%;
   }
   .timeline > li {
-    min-height: 100px;
     margin-bottom: 100px;
   }
   .timeline > li .timeline-panel {
@@ -554,9 +549,7 @@ button.navbar-toggler:hover {
   }
   .timeline > li .timeline-image {
     left: 50%;
-    width: 100px;
-    height: 100px;
-    margin-left: -50px;
+    margin-left: -40px;
   }
   .timeline > li .timeline-image h4 {
     font-size: 13px;
@@ -571,15 +564,12 @@ button.navbar-toggler:hover {
 }
 @media (min-width: 992px) {
   .timeline > li {
-    min-height: 150px;
   }
   .timeline > li .timeline-panel {
     padding: 0 20px 20px;
   }
   .timeline > li .timeline-image {
-    width: 150px;
-    height: 150px;
-    margin-left: -75px;
+    
   }
   .timeline > li .timeline-image h4 {
     font-size: 18px;
@@ -592,15 +582,11 @@ button.navbar-toggler:hover {
 }
 @media (min-width: 1200px) {
   .timeline > li {
-    min-height: 170px;
   }
   .timeline > li .timeline-panel {
     padding: 0 20px 20px 100px;
   }
   .timeline > li .timeline-image {
-    width: 170px;
-    height: 170px;
-    margin-left: -85px;
   }
   .timeline > li .timeline-image h4 {
     margin-top: 40px;
@@ -658,8 +644,6 @@ footer {
   display: block;
   width: 100%;
   padding: 0.375rem 1rem;
-  font-size: 1.25rem;
-  font-weight: 300;
   line-height: 1.5;
   color: var(--bs-gray);
   background-color: #fff;
