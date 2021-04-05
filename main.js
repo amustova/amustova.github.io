@@ -1,51 +1,3 @@
-/***************************************
- *                                     *
- * IMMA KEEP THIS FOR FUTURE REFERENCE *
- *                                     *
- ***************************************/
-/*
-var toogleLinks = document.querySelectorAll('.nav-link');
-var toogleBlocks = document.querySelectorAll('.sxtion');
-
-// Loop through all links
-Array.from(toogleLinks).forEach(link => {
-	// add click event
-    link.addEventListener('click', function(event) {
-    	// Hide all blocks
-    	Array.from(toogleBlocks).forEach(item => item.classList.add('d-none'));
-        // Get target block
-        var target = this.getAttribute('href');
-        // Show target block
-        document.querySelector(target).classList.remove('d-none');
-    }, false);
-});
-*/
-
-/***************************************
- *                                     *
- * IMMA KEEP THIS FOR FUTURE REFERENCE *
- *                                     *
- ***************************************/
-/*
-var toogleLinks = document.querySelectorAll('[data-toggle]');
-
-// Loop through all links
-Array.from(toogleLinks).forEach(link => {
-        // get tooble elements
-        var elementsSelector = link.getAttribute('data-toggle')
-        var elements = document.querySelectorAll(elementsSelector);
-	// add click event
-        link.addEventListener('click', function(event) {
-        // Hide all blocks
-        Array.from(elements).forEach(item => item.classList.add('d-none')); // setAttribute('hidden', true));
-        // Get target block
-        var target = this.getAttribute('href');
-        // Show target block
-        document.querySelector(target).classList.remove('d-none'); // removeAttribute('hidden')
-    }, false);
-});
- */
-
 /************************************
  *                                  *
  * HIDE NAVBAR ONCLICK EVERYWHERE   *
@@ -104,25 +56,6 @@ myCarousel.addEventListener('slide.bs.carousel', (event) => {
 
 /************************************
  *                                  *
- * CAROUSEL INDICATOR jquery ver    *
- *                                  *
- ************************************/
-/*
-$('.carousel').bind('slide.bs.carousel', function (e) {
-    var index = $(e.relatedTarget).index();
-
-    $('[data-target="#' + $(this).prop('id') + '"]').each(function (i) {
-        if (i === index) {
-            $(this).addClass('active');
-        } else {
-            $(this).removeClass('active');
-        }
-    });
-});
-*/
-
-/************************************
- *                                  *
  *  BOOTSTRAP TOOLTIP TRIGGER       *
  *                                  *
  ************************************/
@@ -140,7 +73,7 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     
     async function handleSubmit(event) {
       event.preventDefault();
-      var status = document.getElementById("status");
+      var status = document.querySelector(".toast-body");
       var data = new FormData(event.target);
       fetch(event.target.action, {
         method: form.method,
@@ -150,9 +83,30 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
         }
       }).then(response => {
         status.innerHTML = "Thanks for your submission!";
+        toastList.forEach(toast => toast.show());
         form.reset()
       }).catch(error => {
         status.innerHTML = "Oops! There was a problem submitting your form"
+        toastList.forEach(toast => toast.show());
       });
     }
     form.addEventListener("submit", handleSubmit)
+
+/************************************
+ *                                  *
+ *    TOAST FORM                    *
+ *                                  *
+ ************************************/
+
+  var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+  var toastList = toastElList.map(function (toastEl) {
+    return new bootstrap.Toast(toastEl)
+  })
+
+
+/* Manual?
+--------------------------------------
+*/
+  document.getElementById("toastbtn").onclick = function() {
+	toastList.forEach(toast => toast.show());
+    }

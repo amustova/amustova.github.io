@@ -302,6 +302,12 @@ noted,
 .flex-even {
   flex: 1;
   }
+.toast-body {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 2rem;
+  color: var(--bs-light);
+  }
 /*  NAVBAR
 -----------------------------------------
 */

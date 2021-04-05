@@ -260,28 +260,6 @@
 
                 <div class="col">
                   <p class="heading">Legend</p>
-                  <!--//
-                  <ul>
-                    <li class="d-flex align-items-center">
-                      <i class="bullet bg-purple"></i>Personal <mark>ongoing</mark>
-                    </li>spending free-time as freelance web designer.
-                    <li class="d-flex align-items-center">
-                      <i class="bullet bg-danger"></i>Dimas NET <mark>done</mark>
-                    </li>internet corner & game center.
-                    <li class="d-flex align-items-center">
-                      <i class="bullet bg-orange"></i>Exxotic KTV <mark>ongoing</mark>
-                    </li>karaoke bar & cafe.
-                    <li class="d-flex align-items-center">
-                      <i class="bullet bg-success"></i>De Luna KTV <mark>ongoing</mark>
-                    </li>family oriented karaoke cafe.
-                    <li class="d-flex align-items-center">
-                      <i class="bullet bg-info"></i>Jawara Adv <mark>ongoing</mark>
-                    </li>advertising & printing company.
-                    <li class="d-flex align-items-center">
-                      <i class="bullet bg-secondary"></i>Nusa Motor <mark>ongoing</mark>
-                    </li>motor vehicle dealer.
-                  </ul>
-                  //-->
                   <div class="row row-cols-1 row-cols-md-2 g-3 g-md-5">
                   
                     <div class="col">
@@ -433,24 +411,35 @@
         <section id="contact" class="carousel-item">
           <div class="bg-light min-vh-100 d-flex align-items-center">
             <div class="container pt-5">
+              
               <div class="row g-3">
                 <div class="col-12 col-md-6">
                   <form id="fs-frm" accept-charset="utf-8" action="https://formspree.io/f/xzbybdqr" method="post">
                     <fieldset id="fs-frm-inputs">
-                      <input type="text" name="name" id="full-name" placeholder="Name" required="" class="form-control rounded-pill">
+                      <input pattern="^[a-zA-Z ]*$" title="Only Alphabet & Space Are Allowed" type="text" name="name" id="full-name" placeholder="Name" required="" class="form-control rounded-pill">
                 </div>
                 <div class="col-12 col-md-6">
-                      <input type="email" name="_replyto" id="email-address" placeholder="Email" required="" class="form-control rounded-pill">
+                      <input type="email" name="_replyto" id="email-address" placeholder="Email" class="form-control rounded-pill" required>
                 </div>
                 <div class="col-12">
                     <textarea rows="5" name="message" id="message" placeholder="Message" required="" class="form-control"></textarea>
                     <input type="hidden" name="_subject" id="email-subject" value="amustova.github.io - contact form">
                     </fieldset>
                     <input type="submit" value="Send" class="btn btn-white my-3">
-                    <p id="status"></p>
                   </form>
+                  <div class="position-fixed top-0 start-50 translate-middle-x pt-5" style="z-index: 59999">
+                    <div class="toast hide bg-dark px-2" role="alert">
+                      <div class="d-flex align-items-start">
+                        <div class="toast-body">
+                          form state
+                        </div>
+                        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+              
               <div class="row row-cols-1 row-cols-md-2 g-3 g-md-5 mb-5">
                 <div class="col">
                   <h5 class="">Email</h5>
