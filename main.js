@@ -3,9 +3,9 @@
  * HIDE NAVBAR ONCLICK EVERYWHERE   *
  *                                  *
  ************************************/
-  var preloader = document.querySelector('#preloader');
+  var preloader = document.querySelector("#preloader");
   if (preloader) {
-    window.addEventListener('load', () => {
+    window.addEventListener("load", () => {
       preloader.remove()
     });
   }
