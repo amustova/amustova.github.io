@@ -3,6 +3,18 @@
  * HIDE NAVBAR ONCLICK EVERYWHERE   *
  *                                  *
  ************************************/
+  var preloader = document.querySelector('#preloader');
+  if (preloader) {
+    window.addEventListener('load', () => {
+      preloader.remove()
+    });
+  }
+
+/************************************
+ *                                  *
+ * HIDE NAVBAR ONCLICK EVERYWHERE   *
+ *                                  *
+ ************************************/
 var body = document.querySelector("body");
 var nbCollapse = document.querySelector(".navbar-collapse");
 var hide = new bootstrap.Collapse(nbCollapse, { toggle: false });
