@@ -322,7 +322,7 @@ noted,
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: var(--dark); /* #1a1814; */
+  background: var(--bs-dark); /* #1a1814; */
 }
 
 #preloader:before {
@@ -330,9 +330,9 @@ noted,
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid var(--dark);
-  border-top-color: var(--orange);
-  border-bottom-color: var(--orange);
+  border: 6px solid var(--bs-dark);
+  border-top-color: var(--bs-purple);
+  border-bottom-color: var(--bs-purple);
   border-radius: 50%;
   width: 60px;
   height: 60px;
