@@ -312,6 +312,7 @@ noted,
 .min-vh-100 {
   min-height: calc(100vh - 7rem) !important;
   }
+
 /*  NAVBAR
 -----------------------------------------
 */
@@ -635,7 +636,7 @@ button.navbar-toggler:hover {
   }
 }
 
-/*  FORM STYLE
+/*  CONTACT FORM STYLE
 ------------------------------------------
 */
 .form-control {
