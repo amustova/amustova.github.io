@@ -5,6 +5,7 @@
  ************************************/
   var preloader = document.querySelector('#preloader');
   window.addEventListener('load', function(){
+    alert('ahahahah')
     preloader.remove()
     });
 
