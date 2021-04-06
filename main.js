@@ -3,10 +3,7 @@
  *  PRELOADER ELEMENT               *
  *                                  *
  ************************************/
-var loader = document.querySelector('#preloader');
-window.addEventListener('load', function(){
-  setTimeout(function(){loader.remove()}, 1000)
-  });
+
 
 /************************************
  *                                  *
