@@ -6,6 +6,7 @@
 var preloader = document.querySelector('#preloader');
 if (preloader){
   window.addEventListener('load', () => {
+    alert('lets go');
     preloader.remove();
   });
 };
