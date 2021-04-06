@@ -4,11 +4,9 @@
  *                                  *
  ************************************/
   var preloader = document.querySelector('#preloader');
-  if (preloader) {
-    window.addEventListener('load', function(){
-      preloader.parentChild.removeChild(preloader)
+  window.addEventListener('load', function(){
+    preloader.remove()
     });
-  }
 
 /************************************
  *                                  *
