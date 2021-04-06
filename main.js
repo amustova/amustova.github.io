@@ -62,6 +62,8 @@
     var elementChildrens = document.querySelector('.carousel-controls').children;
     elementChildrens.item(event.from).classList.remove('active');
     elementChildrens.item(event.to).classList.add('active');
+    document.body.scrollTop = 0; // safari
+    document.documentElement.scrollTop = 0; // webkit
   });
 
 /************************************
@@ -69,11 +71,6 @@
  *  CAROUSEL TO TOP                 *
  *                                  *
  ************************************/
-  var myCarousel = document.getElementById('myCarousel')
-
-  myCarousel.addEventListener('slide.bs.carousel', function () {
-    // do something...
-  })
 
 /************************************
  *                                  *
