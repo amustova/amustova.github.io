@@ -5,8 +5,8 @@
  ************************************/
   var preloader = document.querySelector('#preloader');
   if (preloader) {
-    window.addEventListener('load', () => {
-      preloader.remove()
+    window.addEventListener('load', function(){
+      preloader.parentChild.removeChild(preloader)
     });
   }
 
