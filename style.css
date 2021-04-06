@@ -115,7 +115,7 @@ li.bulb:before {
   content: "\1F4A1";
   }
 h1, h2, h3, h4, h5, h6 {
-  color: var(--bs-gray-dark);
+  color: var(--bs-dark);
   }
 h1 {
   font-size: 3rem;
