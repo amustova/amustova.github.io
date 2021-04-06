@@ -315,6 +315,7 @@ noted,
 -----------------------------------------
 */
 #preloader {
+  min-height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
@@ -323,8 +324,7 @@ noted,
   z-index: 9999;
   overflow: hidden;
   background: var(--bs-dark); /* #1a1814; */
-}
-
+  }
 #preloader:before {
   content: "";
   position: fixed;
@@ -338,25 +338,23 @@ noted,
   height: 60px;
   -webkit-animation: animate-preloader 1s linear infinite;
   animation: animate-preloader 1s linear infinite;
-}
-
+  }
 @-webkit-keyframes animate-preloader {
   0% {
     transform: rotate(0deg);
-  }
+    }
   100% {
     transform: rotate(360deg);
+    }
   }
-}
-
 @keyframes animate-preloader {
   0% {
     transform: rotate(0deg);
-  }
+    }
   100% {
     transform: rotate(360deg);
+    }
   }
-}
 
 /*  NAVBAR
 -----------------------------------------
