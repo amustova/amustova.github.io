@@ -1,6 +1,6 @@
 /************************************
  *                                  *
- * HIDE NAVBAR ONCLICK EVERYWHERE   *
+ *  PRELOADER ELEMENT               *
  *                                  *
  ************************************/
   var preloader = document.querySelector('#preloader');
@@ -12,7 +12,7 @@
 
 /************************************
  *                                  *
- * HIDE NAVBAR ONCLICK EVERYWHERE   *
+ *  HIDE NAVBAR ONCLICK EVERYWHERE  *
  *                                  *
  ************************************/
 var body = document.querySelector('body');
@@ -27,7 +27,7 @@ body.addEventListener('click', function () {
 
 /************************************
  *                                  *
- * HIDE & COLLAPSE NAVBAR ON SCROLL *
+ *  HIDE/COLLAPSE NAVBAR ON SCROLL  *
  *                                  *
  ************************************/
 var navbar = document.querySelector('#navigation');
@@ -54,7 +54,7 @@ window.onscroll = function () {
 
 /************************************
  *                                  *
- * CAROUSEL INDICATOR add active    *
+ *  CAROUSEL INDICATOR add active   *
  *                                  *
  ************************************/
 var myCarousel = document.querySelector('#carouselPage');
@@ -77,7 +77,7 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 
 /************************************
  *                                  *
- *    CONTACT FORM                  *
+ *  CONTACT FORM                    *
  *                                  *
  ************************************/
 var form = document.getElementById('fs-frm');
@@ -107,7 +107,7 @@ form.addEventListener('submit', handleSubmit);
 
 /************************************
  *                                  *
- *    TOAST FORM                    *
+ *  TOAST FORM                      *
  *                                  *
  ************************************/
 
