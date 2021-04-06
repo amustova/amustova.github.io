@@ -3,10 +3,10 @@
  *  PRELOADER ELEMENT               *
  *                                  *
  ************************************/
-  var preloader = document.querySelector('#preloader');
-  window.addEventListener('load', function(){
-    setTimeout(function(){preloader.remove()}, 1000)
-    });
+var preloader = document.querySelector('#preloader');
+window.addEventListener('load', function(){
+  preloader.remove();
+  });
 
 /************************************
  *                                  *
@@ -108,7 +108,6 @@ form.addEventListener('submit', handleSubmit);
  *  TOAST FORM                      *
  *                                  *
  ************************************/
-
 var toastElList = [].slice.call(document.querySelectorAll('.toast'));
 var toastList = toastElList.map(function (toastEl) {
   return new bootstrap.Toast(toastEl);
