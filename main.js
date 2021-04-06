@@ -66,6 +66,17 @@
 
 /************************************
  *                                  *
+ *  CAROUSEL TO TOP                 *
+ *                                  *
+ ************************************/
+  var myCarousel = document.getElementById('myCarousel')
+
+  myCarousel.addEventListener('slide.bs.carousel', function () {
+    // do something...
+  })
+
+/************************************
+ *                                  *
  *  BOOTSTRAP TOOLTIP TRIGGER       *
  *                                  *
  ************************************/
