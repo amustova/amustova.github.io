@@ -439,8 +439,38 @@ button.navbar-toggler:hover {
   content: "";
   box-shadow: 0 6px 0 0 rgba(108, 0, 175, 0.75);
   }
-  
+
 /*  EXPERIENCE
+------------------------------------------
+*/
+.wrapper {
+  overflow: scroll;
+  }
+#chart {
+  min-width: 200%;
+  color: var(--bs-gray);
+  font-size: 0.75rem;
+  border-left: 1px solid #dee2e6;
+  }
+#chart .chart-row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  }
+#chart .chart-row:first-child .item,
+#chart .chart-row:last-child .item {
+  border-top: 1px solid #dee2e6;
+  }
+#chart .chart-row .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-right: 1px solid #dee2e6;
+  }
+
+/*  EDUCATION
 -----------------------------------------
 */
 .timeline {
@@ -605,49 +635,6 @@ button.navbar-toggler:hover {
   }
 }
 
-/*  FOOTER
------------------------------------------
-*/
-footer {
-  position: relative;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding-top: 1.2rem;
-  padding-bottom: 1.2rem;
-  }
-
-
-/*  CHART STYLE
-------------------------------------------
-*/
-    .wrapper {
-      overflow: scroll;
-      }
-    #chart {
-      min-width: 200%;
-      color: var(--bs-gray);
-      font-size: 0.75rem;
-      border-left: 1px solid #dee2e6;
-      }
-    #chart .chart-row {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      }
-    #chart .chart-row:first-child .item,
-    #chart .chart-row:last-child .item {
-      border-top: 1px solid #dee2e6;
-      }
-    #chart .chart-row .item {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-top: 0.5rem;
-      padding-bottom: 0.5rem;
-      border-right: 1px solid #dee2e6;
-      }
-
 /*  FORM STYLE
 ------------------------------------------
 */
@@ -731,3 +718,15 @@ footer {
 .form-control:hover:not(:disabled):not([readonly])::-webkit-file-upload-button {
   background-color: #dde0e3;
 }
+
+/*  FOOTER
+-----------------------------------------
+*/
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  }
