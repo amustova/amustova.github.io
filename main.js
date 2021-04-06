@@ -5,10 +5,10 @@
  ************************************/
 var preloader = document.querySelector('#preloader');
 if (preloader){
-  window.addEventListener('load', function(){
+  window.addEventListener('load', () => {
     preloader.remove();
-    });
-  };
+  });
+};
 
 /************************************
  *                                  *
