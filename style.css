@@ -360,7 +360,7 @@ noted,
 #preloader:before {
   content:"";
   position: fixed;
-  z-indeed: 99999;
+  z-index: 99999;
   top:0;
   left:0;
   right: 0;
