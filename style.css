@@ -375,6 +375,7 @@ noted,
   left: calc(50% - 60px);
   width: 120px;
   height: 120px;
+  background-color: var(--bs-dark);
 }
 #preloader div {
   box-sizing: border-box;
