@@ -357,7 +357,8 @@ noted,
     }
   }
 */
-#preloader {
+#preloader:before {
+  content: "";
   position: fixed;
   z-index: 99999;
   top:0;
