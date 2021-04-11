@@ -436,6 +436,7 @@ button.navbar-toggler:hover {
   transform: rotate(0);
   }
 .navbar-toggler .toggler-icon:nth-of-type(1) {
+  margin: 0.1rem 0;
   transform: rotate(180deg);
   transform-origin: 50% 50%;
   transition: all 0.2s;
@@ -444,13 +445,14 @@ button.navbar-toggler:hover {
   transform: rotate(-90deg);
   transform-origin: 50% 50%;
   transition: all 0.2s;
-  transition-delay: 0.2s;
+  transition-delay: 0.1s;
   }
 .navbar-toggler .toggler-icon:nth-of-type(3) {
+  margin: 0.1rem 0;
   transform: rotate(180deg);
   transform-origin: 50% 50%;
   transition: all 0.2s;
-  transition-delay: 0.4s;
+  transition-delay: 0.2s;
   }
 
 /*  CAROUSEL
