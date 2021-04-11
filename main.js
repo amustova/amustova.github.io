@@ -68,12 +68,6 @@
 
 /************************************
  *                                  *
- *  CAROUSEL TO TOP                 *
- *                                  *
- ************************************/
-
-/************************************
- *                                  *
  *  BOOTSTRAP TOOLTIP TRIGGER       *
  *                                  *
  ************************************/
@@ -121,15 +115,6 @@
   var toastList = toastElList.map(function (toastEl) {
     return new bootstrap.Toast(toastEl);
   });
-
-/* Manual?
---------------------------------------
-*/
-/*
-  document.getElementById('toastbtn').onclick = function() {
-	toastList.forEach(toast => toast.show());
-    }
-*/
 
 /************************************
  *                                  *
