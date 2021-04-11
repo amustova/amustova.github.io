@@ -139,5 +139,6 @@
 AOS.init({
   duration: 600,
   delay: 300,
-  easing: 'ease-in-sine',
+  easing: 'ease-in-out',
+  once: true,
 });
