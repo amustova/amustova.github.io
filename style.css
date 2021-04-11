@@ -362,10 +362,6 @@ nav {
   border-bottom: 0.1rem solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 2px 2px 0 rgba(108, 0, 175, 0.25);
   }
-.navbar {
-  padding-top: 0;
-  padding-bottom: 0;
-  }
 .navbar-custom .navbar-brand {
   color: var(--bs-light);
   font-size: 1.25rem;
@@ -788,6 +784,6 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   }
