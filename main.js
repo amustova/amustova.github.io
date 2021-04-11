@@ -115,10 +115,3 @@
   var toastList = toastElList.map(function (toastEl) {
     return new bootstrap.Toast(toastEl);
   });
-
-/************************************
- *                                  *
- *  ANIMATE ON SCROLL               *
- *                                  *
- ************************************/
-  AOS.init();
