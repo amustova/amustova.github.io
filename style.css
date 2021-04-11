@@ -330,7 +330,7 @@ noted,
   position: fixed;
   top: calc(50% - 50px);
   left: calc(50% - 50px);
-  border: 10px solid var(--bs-white);
+  border: 15px solid var(--bs-white);
   border-top-color: var(--bs-purple);
   border-radius: 50%;
   width: 100px;
