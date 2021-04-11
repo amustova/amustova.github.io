@@ -328,13 +328,13 @@ noted,
 #preloader:before {
   content: "";
   position: fixed;
-  top: calc(50% - 60px);
-  left: calc(50% - 60px);
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
   border: 10px solid var(--bs-white);
   border-top-color: var(--bs-purple);
   border-radius: 50%;
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   -webkit-animation: animate-preloader 2s linear infinite;
   animation: animate-preloader 2s linear infinite;
   }
