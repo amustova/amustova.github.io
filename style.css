@@ -308,7 +308,7 @@ noted,
   color: var(--bs-light);
   }
 .min-vh-100 {
-  min-height: calc(100vh - 7rem) !important;
+  min-height: calc(100vh - 6.5rem) !important;
   }
 
 /*  PRELOADER
