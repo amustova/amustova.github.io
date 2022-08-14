@@ -97,6 +97,8 @@ body {
   color: var(--bs-gray-dark);
   background-color: var(--bs-light);
   padding-top: 50px;
+  margin-right: calc(-1 * (100vw - 100%));
+  overflow-x:hidden;
   }
 ul {
   padding-left: 2.2rem;
@@ -361,6 +363,7 @@ noted,
 nav {
   border-bottom: 0.1rem solid rgba(108, 0, 175, 0.1);
   box-shadow: 0 2px 2px 0 rgba(108, 0, 175, 0.25);
+  margin-right: calc(-1 * (100vw - 100%));
   }
 .navbar {
   padding-top: 0.3rem;
